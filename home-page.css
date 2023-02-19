@@ -31,15 +31,21 @@ body {
   width: 99vw;
   overflow-x: hidden;
 
-  /* height: 50%; */
+  /* height: 500vh; */
   position: relative;
-  display: grid;
-  grid-template-columns: 0.01fr 0.98fr 0.01fr;
-  grid-template-rows: 0.08fr 0.5fr 1fr 0.5fr 0.05fr;
   justify-content: center;
   align-content: center;
 
   /* height: 420vh; */
+}
+
+.general-grid {
+  width: 100%;
+  height: 100%;
+  background-color: #f7f7f7;
+  position: relative;
+  display: grid;
+  grid-template-columns: 0.01fr 0.98fr 0.01fr;
 }
 
 .background-image-wrapper {
@@ -55,6 +61,10 @@ body {
   width: 100%;
 
   /* background-color: rgba(73, 70, 70, 0.5); */
+}
+
+#pop-up-menu-wrapper {
+  display: none;
 }
 
 header {
@@ -75,6 +85,10 @@ header {
   grid-row: 1 / 1;
 }
 
+.about-desk-head {
+  display: none;
+}
+
 .landing-page-home {
   /* grid-column: 2 / 3;
   grid-row: 2 / 2; */
@@ -88,9 +102,13 @@ header {
   background-repeat: no-repeat;
   background-size: cover; */
   justify-self: center;
-  padding-bottom: 8%;
-  padding-top: 25%;
+  align-self: center;
+
+  /* padding-bottom: 8%; */
+  padding-top: 20%;
+  padding-bottom: 20%;
   margin-left: 5%;
+  margin-bottom: -15%;
 }
 
 .landing-page-home h3 {
@@ -107,18 +125,19 @@ header {
   font-family: var(--font-family-body);
   font-weight: 900;
   color: #d42307;
-  font-size: 2rem;
+  font-size: 4rem;
   font-size: var(--h1-font-size);
-  margin-bottom: 12%;
+  margin-bottom: 8%;
   text-align: left;
   background-color: transparent;
   mix-blend-mode: color-burn;
 }
 
 .page-1-info {
-  width: 95%;
+  width: 100%;
   text-align: left;
   justify-self: center;
+  padding: 5%;
 }
 
 .page-1-info p {
@@ -126,7 +145,10 @@ header {
   color: var(--font-color-ash);
   background-color: transparent;
   border: 2px solid white;
-  padding: 5%;
+  display: flex;
+  text-align: left;
+
+  /* padding: 5%; */
   margin-bottom: 5%;
   position: relative;
   width: 100%;
@@ -219,9 +241,8 @@ header {
   grid-column: 2 / 2;
   background-color: #2f2d2e;
   padding-top: 10%;
-
-  /* height: 200vh; */
-  padding-bottom: 30%;
+  height: 98%;
+  padding-bottom: 60%;
 }
 
 .programs h3 {
@@ -232,10 +253,11 @@ header {
 }
 
 .program-grid {
-  height: 150vh;
+  /* height: 150vh; */
   grid-row-gap: 3%;
   width: 90%;
   margin-left: 5%;
+  height: 80%;
 }
 
 .program-grid h2 {
@@ -251,7 +273,7 @@ header {
 
 .cell {
   display: grid;
-  grid-template-columns: 0.2fr 0.3fr 0.7fr 1fr 0.025fr;
+  grid-template-columns: 0.1fr 0.4fr 0.7fr 1fr 0.025fr;
   grid-template-rows: 1fr;
   margin-bottom: 10%;
   padding-top: 5%;
@@ -261,15 +283,23 @@ header {
   /* width: 90%; */
 }
 
+.cell:hover {
+  border: 2px solid #fff;
+}
+
 .cell .fa-solid {
   grid-column: 2 / 3;
   font-size: 3rem;
   color: white;
+  align-self: center;
 }
 
 .cell h2 {
   grid-column: 3 / 4;
   justify-self: start;
+  font-size: 1.2rem;
+  margin-top: 8%;
+  align-self: center;
 }
 
 .cell p {
@@ -278,8 +308,19 @@ header {
   text-align: left;
 }
 
+.cell-4 h2 {
+  font-size: 1.2rem;
+  margin-right: 5%;
+}
+
 .big-orange-button {
   text-align: center;
+  width: 100%;
+  padding-right: -5%;
+  padding-left: -5%;
+  margin-bottom: 10%;
+  margin-top: 30%;
+  font-size: 1rem;
 }
 
 .big-orange-button a {
@@ -288,8 +329,8 @@ header {
   color: white;
   background-color: var(--header-color-red);
   text-align: center;
-  padding: 8%  25%;
-  font-size: 2rem;
+  padding: 8%  10%;
+  font-size: 1.5rem;
 }
 
 .white-space {
@@ -305,6 +346,7 @@ header {
   font-family: var(--font-family-body);
   background-color: white;
   padding-top: 10%;
+  padding-bottom: 10%;
 }
 
 .contributors .fa-minus {
@@ -337,7 +379,7 @@ header {
 
 .c-image {
   position: relative;
-  width: 80%;
+  width: 100%;
   grid-column: 2 / 2;
   justify-self: end;
   margin-left: 10%;
@@ -409,6 +451,10 @@ header {
   display: none;
 }
 
+.white-link {
+  display: none;
+}
+
 @media (min-width: 768px) {
   :root {
     --dates-font-size: 2rem;
@@ -423,11 +469,41 @@ header {
     /* height: 650vh; */
 
     position: relative;
+  }
+
+  .general-grid {
     display: grid;
     grid-template-columns: 0.01fr 0.98fr 0.01fr;
-    grid-template-rows: 0.08fr 0.9fr 0.2fr 0.5fr 0.3fr 0.1fr;
+
+    /* grid-template-rows: 0.08fr 0.5fr 0.2fr 0.3fr 0.3fr 0.2fr; */
     justify-content: center;
     align-content: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .about-mobile-head {
+    display: none;
+  }
+
+  .about-desk-head {
+    display: block;
+    position: fixed;
+    margin: 0;
+
+    /* z-index: 99; */
+    background-color: #fff;
+    height: 16%;
+    grid-column: 1 / -1;
+    grid-row: 1 / 1;
+    box-shadow: 2px 2px rgb(155, 165, 168);
+    font-family: var(--font-family-body);
+  }
+
+  .landing-page-home h1 {
+    margin-bottom: 3%;
+    font-size: 4rem;
   }
 
   .programs {
@@ -441,6 +517,14 @@ header {
     margin-bottom: 5%;
   }
 
+  .page-1-info {
+    width: 60%;
+  }
+
+  .page-1-info p {
+    width: 100%;
+  }
+
   .contributors {
     grid-row: 4 / 4;
     grid-column: 2 / 2;
@@ -448,17 +532,143 @@ header {
     font-family: var(--font-family-body);
     background-color: rgba(243, 242, 242, 0.959);
     padding-top: 10%;
+    padding-bottom: 10%;
   }
 
   .contributors-grid {
     padding-top: 5%;
     text-align: left;
     display: grid;
-    grid-template-columns: 1fr 0.0025fr 1fr;
+    grid-template-columns: 1fr 1fr;
 
     /* grid-template-rows: repeat(auto, 1fr); */
     width: 100%;
     margin-bottom: 10%;
+  }
+
+  .sign-in-bar {
+    background-color: rgb(56, 53, 53);
+
+    /* position: relative; */
+    width: 99vw;
+    height: 6vh;
+    display: flex;
+    justify-content: end;
+  }
+
+  .sign-in-bar .fa-brands {
+    color: white;
+    margin-top: 1%;
+    margin-right: 2%;
+  }
+
+  .sign-in-bar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    margin-top: 1%;
+    margin-right: 8%;
+  }
+
+  .cc-image a {
+    text-decoration: none;
+    color: #1e1a1b;
+  }
+
+  .sign-in-bar ul a {
+    text-decoration: none;
+    font-family: var(--font-family-body);
+    color: white;
+  }
+
+  .white-part {
+    display: grid;
+    width: 100%;
+    position: relative;
+    grid-template-columns: 0.3fr 1fr 1.5fr;
+    grid-template-rows: 1fr;
+    align-content: center;
+  }
+
+  .menu-list ul a {
+    text-decoration: none;
+    color: #414246;
+    align-self: center;
+    padding: 8%;
+  }
+
+  .menu-list-list a:hover {
+    color: #f93c1f;
+    border: 2px solid #f93c1f;
+  }
+
+  .about-desk-head .cc-image {
+    grid-column: 1 / 1;
+    margin-right: 2%;
+    margin-left: 15%;
+    color: #414246;
+    justify-self: end;
+  }
+
+  .about-desk-head .fa-closed-captioning {
+    font-size: 3.5rem;
+  }
+
+  .about-desk-head .text {
+    grid-column: 2 / 2;
+
+    /* text-align: center; */
+
+    /* display: flex; */
+    color: #414246;
+  }
+
+  .part-one-page-2 p {
+    font-size: 2rem;
+  }
+
+  .cell p {
+    grid-column: 1 / 1;
+    grid-row: 3 / -1;
+    justify-self: center;
+    text-align: center;
+  }
+
+  .about-desk-head .text p {
+    font-family: var(--font-family-body);
+  }
+
+  .menu-list ul a :hover {
+    color: #f93c1f;
+  }
+
+  .about-desk-head .text :nth-child(1) {
+    font-weight: 900;
+    font-size: 1.2rem;
+    color: #414246;
+  }
+
+  .about-desk-head .text :nth-child(2) {
+    font-weight: 900;
+    font-size: 0.8rem;
+    color: #414246;
+  }
+
+  .about-desk-head .text :nth-child(3) {
+    border: none;
+    color: #868992;
+  }
+
+  .menu-list ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 98%;
+    position: relative;
+    align-self: center;
+    margin-top: 2.5%;
+    margin-right: 5%;
   }
 
   .contributor-4,
@@ -522,13 +732,6 @@ header {
     text-align: center;
   }
 
-  .cell p {
-    grid-column: 1 / 1;
-    grid-row: 3 / -1;
-    justify-self: center;
-    text-align: center;
-  }
-
   .cell .fa-solid {
     grid-column: 1 / 1;
     grid-row: 1 / 2;
@@ -546,6 +749,7 @@ header {
     color: white;
     text-align: center;
     padding-bottom: 10%;
+    display: block;
   }
 
   .more-button {
@@ -563,6 +767,7 @@ header {
     background-color: var(--partners-section-color);
     height: 100%;
     display: block;
+    padding-bottom: 6%;
   }
 
   .partners-1 {
@@ -618,10 +823,6 @@ header {
     margin-left: 8%;
   }
 
-  .contributors {
-    padding-bottom: 10%;
-  }
-
   .credits {
     grid-row: 6 / 6;
     grid-column: 2 / 2;
@@ -631,6 +832,8 @@ header {
     text-align: center;
     background-color: white;
     align-content: center;
+    padding-bottom: 5%;
+    padding-top: 5%;
   }
 
   .credits .fa-copyright {
