@@ -40,7 +40,7 @@ const contributorsgrid = document.querySelector('.contributors-grid');
 
 window.addEventListener('on load', contributorObject.forEach((contributor) => {
   contributorsgrid.innerHTML = `<div class="contributor-${contributor} contributor-info left">
-  <div class="c-image"><img src="images/closeup-image-handsome-asian-man-is-shaving-hair-by-head-man-who-is-ordained-buddhism (1).jpg" class="people-image" alt=""></div>
+  <div class="c-image">${contributor.image}</div>
   <div class="info">
   <h2>${contributor.name}</h2>
   <p class="occupation">${contributor.occupation}</p>
