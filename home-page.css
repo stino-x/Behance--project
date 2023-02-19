@@ -134,6 +134,7 @@ header {
   color: var(--font-color-ash);
   background-color: transparent;
   border: 2px solid white;
+
   /* padding: 5%; */
   margin-bottom: 5%;
   position: relative;
@@ -270,7 +271,7 @@ header {
 }
 
 .cell:hover {
-   border: 2px solid #ffffff;
+  border: 2px solid #fff;
 }
 
 .cell .fa-solid {
@@ -488,7 +489,7 @@ header {
     margin-bottom: 5%;
   }
 
-  .page-1-info p{
+  .page-1-info p {
     width: 80%;
   }
 
