@@ -38,14 +38,19 @@ const contributorObject = [
 ];
 const contributorsgrid = document.querySelector('.contributors-grid');
 
-window.addEventListener('on load', contributorObject.forEach((contributor) => {
-  contributorsgrid.innerHTML = `<div class="contributor-${contributor} contributor-info left">
-  <div class="c-image">${contributor.image}</div>
-  <div class="info">
-  <h2>${contributor.name}</h2>
-  <p class="occupation">${contributor.occupation}</p>
-  <i class="fa-solid fa-minus"></i>
-  <p class="contributions">${contributor.contribution}</p>
-  </div>
-</div>`;
+window.addEventListener('load', (() => {
+  let content = '';
+  contributorObject.forEach((contributor) => {
+    content += `<div class="contributor-${contributor} contributor-info left">
+          <div class="c-image"><img src="${contributor.image}" class="people-image" alt=""></div>
+          <div class="info">
+          <h2>${contributor.name}</h2>
+          <p class="occupation">${contributor.occupation}</p>
+          <i class="fa-solid fa-minus"></i>
+          <p class="contributions">${contributor.contribution}</p>
+          </div>
+        </div>`;
+  });
+  contributorsgrid.innerHTML = content;
+  content = '';
 }));

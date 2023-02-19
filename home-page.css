@@ -346,7 +346,7 @@ header {
 
 .c-image {
   position: relative;
-  width: 80%;
+  width: 100%;
   grid-column: 2 / 2;
   justify-self: end;
   margin-left: 10%;
@@ -438,7 +438,7 @@ header {
     position: relative;
     display: grid;
     grid-template-columns: 0.01fr 0.98fr 0.01fr;
-    grid-template-rows: 0.08fr 0.9fr 0.2fr 0.5fr 0.4fr 0.1fr;
+    grid-template-rows: 0.08fr 1fr 0.2fr 0.3fr 0.4fr 0.2fr;
     justify-content: center;
     align-content: center;
   }
@@ -486,7 +486,7 @@ header {
     padding-top: 5%;
     text-align: left;
     display: grid;
-    grid-template-columns: 1fr 0.0025fr 1fr;
+    grid-template-columns: 1fr 1fr;
 
     /* grid-template-rows: repeat(auto, 1fr); */
     width: 100%;
@@ -537,10 +537,12 @@ header {
     text-decoration: none;
     color: #414246;
     align-self: center;
+    padding: 8%;
   }
 
   .menu-list-list a:hover {
     color: #f93c1f;
+    border: 2px solid #f93c1f;
   }
 
   .about-desk-head .cc-image {
