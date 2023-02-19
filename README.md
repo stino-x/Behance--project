@@ -10,7 +10,7 @@
 
 # 📗 Table of Contents
 
-- [📖 About the Project](This  is the first phase of my first portfolio project)
+- [📖 About the Project]( this is a design replication task)
   - [🛠 Built With](Html/css)
     - [Tech Stack](html/css))
     - [Key Features](hover)
@@ -34,7 +34,7 @@
 
 # 📖 [HELLO-NEW] <a name="about-project"></a>
 
->  this is the first project of the microverse curriculum
+>  this is a design replication task
 
 ## 🛠 Built With <a name="built-with"></a>
 >  Html/css/Javascript
