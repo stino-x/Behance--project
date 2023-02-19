@@ -34,7 +34,7 @@
 
 # 📖 [HELLO-NEW] <a name="about-project"></a>
 
->  this is a design replication task
+>  this is a design replication task to replicate the behance template
 
 ## 🛠 Built With <a name="built-with"></a>
 >  Html/css/Javascript
@@ -160,3 +160,5 @@ Answer: css Grid/Flex-box.
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](https://github.com/stino-x/Behance--project/blob/master/MIT.md) licensed.
+
+loom video: https://www.loom.com/share/8beb98ff81ba4845bb2e073677201b98

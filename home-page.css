@@ -30,12 +30,11 @@ body {
   background-color: #f7f7f7;
   width: 99vw;
   overflow-x: hidden;
-
-  /* height: 50%; */
+  height: 550vh;
   position: relative;
   display: grid;
   grid-template-columns: 0.01fr 0.98fr 0.01fr;
-  grid-template-rows: 0.08fr 0.89fr 1fr 0.5fr 0.05fr;
+  grid-template-rows: 0.08fr 1.5fr 0.4fr 0.5fr 0.05fr 1fr;
   justify-content: center;
   align-content: center;
 
@@ -116,16 +115,16 @@ header {
   font-family: var(--font-family-body);
   font-weight: 900;
   color: #d42307;
-  font-size: 2rem;
+  font-size: 4rem;
   font-size: var(--h1-font-size);
-  margin-bottom: 12%;
+  margin-bottom: 8%;
   text-align: left;
   background-color: transparent;
   mix-blend-mode: color-burn;
 }
 
 .page-1-info {
-  width: 95%;
+  width: 50%;
   text-align: left;
   justify-self: center;
 }
@@ -135,7 +134,7 @@ header {
   color: var(--font-color-ash);
   background-color: transparent;
   border: 2px solid white;
-  padding: 5%;
+  /* padding: 5%; */
   margin-bottom: 5%;
   position: relative;
   width: 100%;
@@ -260,7 +259,7 @@ header {
 
 .cell {
   display: grid;
-  grid-template-columns: 0.2fr 0.3fr 0.7fr 1fr 0.025fr;
+  grid-template-columns: 0.1fr 0.4fr 0.7fr 1fr 0.025fr;
   grid-template-rows: 1fr;
   margin-bottom: 10%;
   padding-top: 5%;
@@ -270,15 +269,23 @@ header {
   /* width: 90%; */
 }
 
+.cell:hover {
+   border: 2px solid #ffffff;
+}
+
 .cell .fa-solid {
   grid-column: 2 / 3;
   font-size: 3rem;
   color: white;
+  align-self: center;
 }
 
 .cell h2 {
   grid-column: 3 / 4;
   justify-self: start;
+  font-size: 1.2rem;
+  margin-top: 8%;
+  align-self: center;
 }
 
 .cell p {
@@ -287,8 +294,17 @@ header {
   text-align: left;
 }
 
+.cell-4 h2 {
+  font-size: 1.2rem;
+  margin-right: 5%;
+}
+
 .big-orange-button {
   text-align: center;
+  width: 50%;
+  padding-right: -5%;
+  padding-left: -5%;
+  margin-left: 5%;
 }
 
 .big-orange-button a {
@@ -297,7 +313,7 @@ header {
   color: white;
   background-color: var(--header-color-red);
   text-align: center;
-  padding: 8%  25%;
+  padding: 8%  10%;
   font-size: 2rem;
 }
 
@@ -438,7 +454,7 @@ header {
     position: relative;
     display: grid;
     grid-template-columns: 0.01fr 0.98fr 0.01fr;
-    grid-template-rows: 0.08fr 1fr 0.2fr 0.3fr 0.4fr 0.2fr;
+    grid-template-rows: 0.08fr 1fr 0.2fr 0.3fr 0.3fr 0.2fr;
     justify-content: center;
     align-content: center;
   }
@@ -470,6 +486,10 @@ header {
     display: flex;
     height: 35vh;
     margin-bottom: 5%;
+  }
+
+  .page-1-info p{
+    width: 80%;
   }
 
   .contributors {
@@ -691,6 +711,7 @@ header {
     color: white;
     text-align: center;
     padding-bottom: 10%;
+    display: block;
   }
 
   .more-button {
@@ -708,6 +729,7 @@ header {
     background-color: var(--partners-section-color);
     height: 100%;
     display: block;
+    padding-bottom: 4%;
   }
 
   .partners-1 {

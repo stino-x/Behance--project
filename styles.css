@@ -32,7 +32,7 @@ body {
   position: relative;
   display: grid;
   grid-template-columns: 0.01fr 0.98fr 0.01fr;
-  grid-template-rows: 0.15fr 1fr 0.65fr 1fr 0.1fr;
+  grid-template-rows: 0.15fr 0.8fr 0.65fr 1fr 0.1fr;
   justify-content: center;
   align-content: center;
 }
@@ -83,7 +83,7 @@ header {
   font-family: var(--font-family-body);
   font-weight: 200;
   margin-bottom: 3%;
-  font-size: 1.6rem;
+  font-size: 0.8rem;
   text-align: center;
 }
 
@@ -93,7 +93,7 @@ header {
   color: #f93c1f;
   font-size: 2rem;
   font-size: var(--h1-font-size);
-  margin-bottom: 12%;
+  margin-bottom: 8%;
   text-align: center;
 }
 
@@ -112,6 +112,7 @@ header {
   margin-bottom: 5%;
   position: relative;
   width: 100%;
+  font-size: 1rem;
 }
 
 .page-1-info small {
@@ -242,10 +243,11 @@ header {
   background-size: cover;
   margin-bottom: 15%;
   color: #fff;
-  width: 50%;
+  width: 70%;
   padding-top: 10%;
   padding-bottom: 10%;
-  margin-left: 25%;
+  margin-left: 10%;
+  height: 30vh;
 }
 
 .red-box p,
@@ -256,6 +258,7 @@ header {
 .red-box :nth-child(1) {
   font-size: var(--logo-2nd-line-font-size);
   font-weight: 500;
+  width: 70%;
 }
 
 .red-box-2 {
@@ -268,10 +271,11 @@ header {
   background-size: cover;
   margin-bottom: 15%;
   color: #fff;
-  width: 50%;
+  width: 70%;
   padding-top: 10%;
   padding-bottom: 10%;
-  margin-left: 25%;
+  margin-left: 10%;
+  height: 30vh;
 }
 
 .red-box-2 :nth-child(1) {
@@ -341,7 +345,7 @@ header {
 
 .company-credits-1 {
   display: flex;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: var(--font-family-body);
   margin-right: 10%;
   text-align: left;
@@ -350,7 +354,7 @@ header {
 
 .company-credits-2 {
   display: flex;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: var(--font-family-body);
   text-align: left;
   color: var(--font-color-ash);
@@ -496,6 +500,10 @@ header {
     margin-top: 2.5%;
   }
 
+  .landing-page-about {
+    padding: 0;
+  }
+
   .landing-page-about h3 {
     display: none;
   }
@@ -518,7 +526,7 @@ header {
     grid-template-rows: 1fr;
     text-align: center;
     align-content: center;
-    margin-right: 10%;
+    margin-right: 2%;
   }
 
   .red-box {
