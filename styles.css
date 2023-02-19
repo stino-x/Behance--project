@@ -372,6 +372,11 @@ header {
     display: none;
   }
 
+  .cc-image a {
+    text-decoration: none;
+    color: #1e1a1b;
+  }
+
   .sign-in-bar ul a {
     text-decoration: none;
     font-family: var(--font-family-body);
