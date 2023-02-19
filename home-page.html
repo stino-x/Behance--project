@@ -11,11 +11,63 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <script src="contributors.js" defer></script>
+    <link rel="stylesheet" href="pop-up-menu.css">
 </head>
-<body>
+<body id="home-page">
     <section class="background-image-wrapper">
         <div class="over-lay">
-            <header class="about-mobile-head"><i class="fa-sharp fa-solid fa-bars"></i></header>
+            <header class="about-mobile-head"><i class="fa-sharp fa-solid fa-bars"></i>
+                <div id="pop-up-menu-wrapper">
+                    <i class="fa-solid fa-xmark" id="cancel"></i>
+                <div class="pop-up-menu">
+                    <ul class=".pop-up-list">
+                        <li class="pop-up-li"><a class="page-link" href="home-page.html">Home</a></li>
+                        <li class="pop-up-li"><a class="page-link" href="index.html">About</a></li>
+                        <li class="pop-up-li">Program</li>
+                        <li class="pop-up-li">Join</li>
+                        <li class="pop-up-li">Sponsor</li>
+                    </ul>
+                </div>
+                </div></header>
+            <header class="about-desk-head">
+                <div class="sign-in-bar">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <ul>
+                        <li><a href="">Logout</a></li>
+                        <li><a href="">Mypage</a></li>
+                        <li><a href="">Extras</a></li>
+                    </ul>
+                </div>
+                <div class="white-part">
+                    <div class="cc-image">
+                        <i class="fa-solid fa-closed-captioning"></i>
+                    </div>
+                    <div class="text">
+                        <p>
+                            CC GLOBAL
+                        </p>
+                        <p>
+                            Summit 2015
+                        </p>
+                        <p class="part-two dates">
+                            14th - 17th oct 2015 | Seoul, Korea
+                        </p>
+                    </div>
+                    <div class="menu-list">
+                        <ul class="menu-list-list">
+                            <li><a href="">About</a></li>
+                            <li><a href="">Program</a></li>
+                            <li><a href="">Join</a></li>
+                            <li><a href="">Sponsor</a></li>
+                            <li><a href="">News</a></li>
+                            <li><a href="">CC Campaign</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
     <section class="landing-page-home">
         <h3>"Hello! Sharing World"</h3>
         <h1>CREATIVE COMMONS <br> GLOBAL SUMMIT 2015</h1>
@@ -128,7 +180,7 @@
                 </div>
             </div>           
         </div>
-        <a href="" class="more-button">MORE<i class="fa-solid fa-chevron-down"></i></a>
+        <button class="more-button">MORE<i class="fa-solid fa-chevron-down"></i></button>
     </section>
     <section class="white-space"></section>
     <section class="partners">

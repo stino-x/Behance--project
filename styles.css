@@ -43,6 +43,14 @@ header {
   margin-left: 5%;
   margin-bottom: 5%;
   z-index: 99;
+}
+
+/* #pop-up-menu-wrapper {
+  display: none;
+} */
+
+.about-desk-head {
+  display: none;
   box-shadow: 2px 2px rgb(155, 165, 168);
 }
 
@@ -349,11 +357,31 @@ header {
   grid-column: 2 / -1;
 }
 
+.company-credits-2-desk {
+  display: none;
+}
+
 /* DESKTOP VERSION */
 
 @media (min-width: 768px) {
   .about-mobile-head {
     display: none;
+  }
+
+  .sign-in-bar ul a {
+    text-decoration: none;
+    font-family: var(--font-family-body);
+    color: white;
+  }
+
+  .menu-list ul a {
+    text-decoration: none;
+    color: #414246;
+    align-self: center;
+  }
+
+  .menu-list-list a:hover {
+    color: #f93c1f;
   }
 
   .fa-bars {
@@ -363,11 +391,15 @@ header {
   .about-desk-head {
     position: fixed;
     margin: 0;
-    z-index: 99;
+
+    /* z-index: 99; */
     background-color: #fff;
     height: 16%;
     grid-column: 1 / -1;
     grid-row: 1 / 1;
+    display: block;
+    box-shadow: 2px 2px rgb(155, 165, 168);
+    font-family: var(--font-family-body);
   }
 
   .sign-in-bar {
@@ -393,12 +425,6 @@ header {
     width: 20%;
     margin-top: 1%;
     margin-right: 8%;
-  }
-
-  .sign-in-bar ul a {
-    text-decoration: none;
-    font-family: var(--font-family-body);
-    color: white;
   }
 
   .white-part {
@@ -439,7 +465,7 @@ header {
     font-family: var(--font-family-body);
   }
 
-  .menu-list ul li a :hover {
+  .menu-list ul a :hover {
     color: #f93c1f;
   }
 
@@ -468,12 +494,6 @@ header {
     position: relative;
     align-self: center;
     margin-top: 2.5%;
-  }
-
-  .menu-list ul a {
-    text-decoration: none;
-    color: #414246;
-    align-self: center;
   }
 
   .landing-page-about h3 {

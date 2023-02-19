@@ -1,0 +1,41 @@
+#pop-up-menu-wrapper {
+  background-color: whitesmoke;
+  text-align: center;
+  position: fixed;
+  height: 102vh;
+  width: 100%;
+  margin-top: -10%;
+  margin-left: -5%;
+  padding-bottom: 5%;
+  overflow: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+.fa-xmark {
+  color: grey;
+  font-size: 2.5rem;
+  margin-left: 80%;
+  padding-top: 2%;
+  cursor: pointer;
+}
+
+.pop-up-list {
+  list-style: none;
+}
+
+.page-link {
+  text-decoration: none;
+  color: #fe4834;
+}
+
+.pop-up-li {
+  color: #fe4834;
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 10%;
+  padding-bottom: 5%;
+  font-size: 2rem;
+  border-bottom: 1px solid rgb(214, 200, 200);
+}

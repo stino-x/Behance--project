@@ -11,9 +11,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<script src="script.js" defer></script>
+<script src="contributors.js" defer></script>
+<link rel="stylesheet" href="pop-up-menu.css">
 </head>
-<body>
-    <header class="about-mobile-head"><i class="fa-sharp fa-solid fa-bars"></i></header>
+<body id="about-page">
+    <header class="about-mobile-head"><i class="fa-sharp fa-solid fa-bars"></i>
+        <div id="pop-up-menu-wrapper">
+            <i class="fa-solid fa-xmark" id="cancel"></i>
+        <div class="pop-up-menu">
+            <ul class=".pop-up-list">
+                <li class="pop-up-li"><a class="page-link" href="home-page.html">Home</a></li>
+                <li class="pop-up-li"><a class="page-link" href="index.html">About</a></li>
+                <li class="pop-up-li">Program</li>
+                <li class="pop-up-li">Join</li>
+                <li class="pop-up-li">Sponsor</li>
+            </ul>
+        </div></header>
     <!-- DESKTOP HEADER ABOUT -->
     <header class="about-desk-head">
         <div class="sign-in-bar">
@@ -41,7 +55,7 @@
                 </p>
             </div>
             <div class="menu-list">
-                <ul>
+                <ul class="menu-list-list">
                     <li><a href="">About</a></li>
                     <li><a href="">Program</a></li>
                     <li><a href="">Join</a></li>
