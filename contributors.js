@@ -52,5 +52,5 @@ window.addEventListener('load', (() => {
         </div>`;
   });
   contributorsgrid.innerHTML = content;
-  content = '';
+  // content = '';
 }));
