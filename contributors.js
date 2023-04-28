@@ -46,7 +46,7 @@ window.addEventListener('load', (() => {
           <div class="info">
           <h2>${contributor.name}</h2>
           <p class="occupation">${contributor.occupation}</p>
-          <i class="fa-solid fa-minus"></i>
+          <div class="minus-container"></div>
           <p class="contributions">${contributor.contribution}</p>
           </div>
         </div>`;
