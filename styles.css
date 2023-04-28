@@ -428,7 +428,8 @@ header {
     position: relative;
     display: grid;
     grid-template-columns: 0.01fr 0.98fr 0.01fr;
-    grid-template-rows: 0.15fr 0.8fr 0.65fr 0.8fr 0.1fr;
+
+    /* grid-template-rows: 0.15fr 0.8fr 0.65fr 0.8fr 0.1fr; */
     justify-content: center;
     align-content: center;
     overflow-x: hidden;
@@ -584,12 +585,12 @@ header {
     /* margin-left: 20%; */
 
     justify-self: center;
-    padding-bottom: 8%;
+    padding-bottom: 30%;
     background-image: url('images/about-bg.png');
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
-    padding-top: 5%;
+    padding-top: 10%;
   }
 
   .page-1-info {
