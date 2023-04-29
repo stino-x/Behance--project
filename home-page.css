@@ -25,6 +25,7 @@
   --dates-font-size: clamp(2rem, -1.7313432835820897rem + 11.940298507462686vw, 2.5rem);
   --programs-h3-font-size: clamp(1.4rem, 0.2805970149253729rem + 3.582089552238806vw, 2rem);
   --landing-page-h3: clamp(1.8rem, -19.999999999999996rem + 44.99999999999999vw, 3.5rem);
+  --red-button-font: clamp(1rem, 0.49738903394255873rem + 2.088772845953003vw, 1.5rem);
 }
 
 body {
@@ -354,15 +355,19 @@ header {
 
 .big-orange-button {
   text-align: center;
-  width: 100%;
-  padding-right: -5%;
-  padding-left: -5%;
-  transform: translateY(10%);
-  font-size: 1rem;
-  height: 120%;
+  width: 95%;
+  font-family: var(--font-family-body);
+  text-decoration: none;
+  color: white;
+  background-color: var(--header-color-red);
+  padding: 8% 2%;
+  font-size: var(--red-button-font);
+  position: relative;
+  top: 5%;
+  margin: 0 auto;
 }
 
-.big-orange-button a {
+/* .big-orange-button a {
   font-family: var(--font-family-body);
   text-decoration: none;
   color: white;
@@ -370,7 +375,7 @@ header {
   text-align: center;
   padding: 8%  10%;
   font-size: 1.5rem;
-}
+} */
 
 .white-space {
   grid-row: 5 / 5;
