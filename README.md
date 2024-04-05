@@ -124,13 +124,14 @@ maybe a more built out page with more information in its content and a desktop v
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- CONTRIBUTING -->
+<!-- ORIGINAL -->
 
-## 🤝 Contributing <a name="contributing"></a>
-@ClintonYounge
-@Jrmcuervo
-@NicolasAndrehh
-@francksefu
+## 🤝 ORIGINAL<a name="original"></a>
+https://www.behance.net/adagio07
+
+## Right to imitate
+https://creativecommons.org/licenses/by-nc/4.0/
+
 
 all on Git hub😀
 
